@@ -19,7 +19,7 @@ class Poll {
             this.createPoll()
         }
     }
-
+mdrrr
     createPoll() {
         
         let req = new Request("https://api.twitch.tv/helix/polls", { method: "POST", headers: headers })
