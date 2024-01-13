@@ -1,3 +1,5 @@
+
+
 class Poll {
     /**
      * Create a poll instance
@@ -11,14 +13,20 @@ class Poll {
      * @param {Number} channel_points.amount Amount of channel points per vote (between 1 and 1.000.000; required only if enabled is set to true)
      * @param {Boolean} run Is the poll get created on twitch channel directly ?
      */
-    constructor(broadcaster_id, title, choices = [{ title: "Yes" }, { title: "No" }], duration = 300, channel_points = { enabled: false }, run = true) {
+    constructor(client, broadcaster_id, title, choices = [{ title: "Yes" }, { title: "No" }], duration = 300, channel_points = { enabled: false }, run = true) {
         this.broadcaster_id = broadcaster_id, this.title = title, this.choices = choices, this.duration = duration, this.channel_points = channel_points
         if (run) {
             this.createPoll()
         }
     }
 
-    createPoll(broadcaster_id) {
+    createPoll() {
         
+        let req = new Request("https://api.twitch.tv/helix/polls", { method: "POST", headers: headers })
+        
+    }
+    
+    endPoll() {
+
     }
 }
