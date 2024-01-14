@@ -1,0 +1,19 @@
+{
+  "name": "twitchapi",
+  "version": "1.0.0",
+  "description": "Ceci est une librairie pour utiliser l'API de TWITCH.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathiasSchweitzer/TwitchAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathiasSchweitzer/TwitchAPI/issues"
+  },
+  "homepage": "https://github.com/MathiasSchweitzer/TwitchAPI#readme"
+}
